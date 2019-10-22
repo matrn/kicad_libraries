@@ -1,0 +1,49 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Autotransformer
+D Regulateable transformer
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP RAT
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+$CMP R_POT
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+$CMP Residual_current_device
+D Single Pole Single Throw (SPST) switch
+K switch lever
+$ENDCMP
+#
+$CMP Switch
+D Single Pole Single Throw (SPST) switch
+K switch lever
+$ENDCMP
+#
+$CMP Transformer_4v3
+D Transformer, single primary, single secondary, SO-8 package
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_4v4
+D Transformer, single primary, single secondary, SO-8 package
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Transformer_5v3
+D Transformer, single primary, single secondary, SO-8 package
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+#End Doc Library
