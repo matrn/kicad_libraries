@@ -6,6 +6,30 @@ K inductor choke coil reactor magnetic
 F ~
 $ENDCMP
 #
+$CMP Coil
+D Inductor
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP DC_motor
+D DC Motor, alternative symbol
+K DC Motor
+F ~
+$ENDCMP
+#
+$CMP KM
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+$CMP Potentiometer
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
 $CMP RAT
 D Potentiometer
 K resistor variable
@@ -13,6 +37,12 @@ F ~
 $ENDCMP
 #
 $CMP R_POT
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+$CMP R_POT_short-pins
 D Potentiometer
 K resistor variable
 F ~
