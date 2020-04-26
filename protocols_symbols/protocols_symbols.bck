@@ -12,10 +12,21 @@ K inductor choke coil reactor magnetic
 F ~
 $ENDCMP
 #
+$CMP Coil_4t
+D Inductor
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
 $CMP DC_motor
 D DC Motor, alternative symbol
 K DC Motor
 F ~
+$ENDCMP
+#
+$CMP Double_switch
+D Single Pole Single Throw (SPST) switch
+K switch lever
 $ENDCMP
 #
 $CMP KM
