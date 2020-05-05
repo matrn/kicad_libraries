@@ -29,6 +29,11 @@ D Single Pole Single Throw (SPST) switch
 K switch lever
 $ENDCMP
 #
+$CMP Electronic_switch
+D Single Pole Single Throw (SPST) switch
+K switch lever
+$ENDCMP
+#
 $CMP KM
 D Potentiometer
 K resistor variable
@@ -84,6 +89,12 @@ $ENDCMP
 $CMP Transformer_5v3
 D Transformer, single primary, single secondary, SO-8 package
 K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP Varicap
+D Diode
+K diode
 F ~
 $ENDCMP
 #

@@ -498,6 +498,26 @@ X ~ ~ 100 100 0 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Electronic_switch
+#
+DEF ~Electronic_switch SW 0 0 Y N 1 F N
+F0 "SW" 0 225 50 H I C CNN
+F1 "Electronic_switch" 0 300 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -55 0 20 0 0 0 N
+C 55 0 20 0 0 0 N
+S -100 100 100 -50 0 1 0 N
+P 2 0 1 0 -75 0 -100 0 N
+P 2 0 1 0 -50 20 50 70 N
+P 2 0 1 0 75 0 100 0 N
+X ~ ~ -150 0 50 R 50 50 1 1 P
+X ~ ~ 0 100 0 D 50 50 1 1 P
+X ~ ~ 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Energymeter
 #
 DEF ~Energymeter E 0 40 Y Y 1 F N
@@ -789,6 +809,34 @@ F2 "" -50 150 50 H I C CNN
 F3 "" -50 150 50 H I C CNN
 DRAW
 T 0 0 0 50 0 0 0 N Normal 0 C C
+ENDDRAW
+ENDDEF
+#
+# NOT
+#
+DEF ~NOT U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H I C CNN
+F1 "NOT" 0 350 50 H I C CNN
+F2 "" 150 100 50 H I C CNN
+F3 "" 150 100 50 H I C CNN
+DRAW
+P 4 0 1 10 -100 -100 -100 100 50 0 -100 -100 N
+X ~ ~ -200 0 100 R 40 40 1 1 I
+X ~ ~ 150 0 100 L 40 40 1 1 O I
+ENDDRAW
+ENDDEF
+#
+# NOT_small
+#
+DEF ~NOT_small U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H I C CNN
+F1 "NOT_small" 0 350 50 H I C CNN
+F2 "" 150 100 50 H I C CNN
+F3 "" 150 100 50 H I C CNN
+DRAW
+P 4 0 1 10 -50 -50 -50 50 25 0 -50 -50 N
+X ~ ~ -100 0 50 R 40 40 1 1 I
+X ~ ~ 100 0 75 L 40 40 1 1 O I
 ENDDRAW
 ENDDEF
 #
@@ -1483,6 +1531,29 @@ T 0 0 0 50 0 0 0 V Normal 0 C C
 ENDDRAW
 ENDDEF
 #
+# Varicap
+#
+DEF ~Varicap D 0 40 N N 1 F N
+F0 "D" 0 100 50 H I C CNN
+F1 "Varicap" 0 -100 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 2 1 1 8 -65 50 -65 -50 N
+X K 1 -150 0 85 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Voltmeter-horizontal
 #
 DEF ~Voltmeter-horizontal V 0 40 Y Y 1 F N
@@ -1560,6 +1631,20 @@ S -50 -50 50 -150 0 0 0 N
 P 2 0 0 5 -150 -225 250 -225 N
 P 2 0 0 3 0 -150 50 -225 N
 P 2 0 0 3 0 -50 -100 50 N
+ENDDRAW
+ENDDEF
+#
+# arrow_short
+#
+DEF ~arrow_short U 0 40 Y Y 1 F N
+F0 "U" 100 0 50 H I C CNN
+F1 "arrow_short" -50 275 50 H I C CNN
+F2 "" 150 25 50 H I C CNN
+F3 "" 150 25 50 H I C CNN
+DRAW
+P 2 0 0 0 0 0 -25 25 N
+P 2 0 0 0 0 0 25 25 N
+X ~ ~ 0 50 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
